@@ -1,0 +1,10 @@
+<div className="mt-5 px-6">
+          <div className="sm:w-[350px]  w-[320px] sm:h-[35px]  rounded-[8px] border-[2px] border-[#f7f7f7] flex  gap-2 justify-center items-center flex-row px-1 ">
+            <FiSearch />
+            <input
+              type="text"
+              className="w-[100%] h-[100%] bg-transparent outline-none text-[#f7f7f7] rounded-l-[10px] pl-3 placeholder:text-[14px]"
+              placeholder="Search by any order parameter"
+            />
+          </div>
+        </div>
