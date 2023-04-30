@@ -12,7 +12,7 @@ function Tabs() {
   };
 
   return (
-    <div className="container px-6">
+    <div className="container px-6 ">
       <div className="bloc-tabs">
         <IconContext.Provider value={{size:'12px'}}>
         <button

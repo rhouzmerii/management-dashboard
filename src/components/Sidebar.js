@@ -19,11 +19,11 @@ import { Link } from "react-router-dom";
         { name: "Rating", link: "/rating", icon: AiOutlineHeart},
         { name: "Setting", link: "/", icon: RiSettings4Line },
       ];
-      const [open, setOpen] = useState(true);
+      const [open, setOpen] = useState(false);
       return (
         <section className="">
         <div
-          className={`bg-[#62AB4D] min-h-screen ${
+          className={`bg-[#62AB4D] min-h-screen  ${
             open ? "w-60" : "w-16"
           } duration-500 text-gray-100 px-4`}
         >
