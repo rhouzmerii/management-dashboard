@@ -1,5 +1,8 @@
 import { useState } from "react";
 import All from "./All";
+import { BsFillBagFill } from "react-icons/bs";
+import { FaLongArrowAltRight, FaLongArrowAltLeft} from "react-icons/fa";
+import { IconContext } from "react-icons";
 
 function Tabs() {
   const [toggleState, setToggleState] = useState(1);
@@ -11,24 +14,32 @@ function Tabs() {
   return (
     <div className="container px-6">
       <div className="bloc-tabs">
+        <IconContext.Provider value={{size:'12px'}}>
         <button
           className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(1)}
         >
-        ALL
+        <BsFillBagFill/> <h6>ALL</h6>
         </button>
+        </IconContext.Provider>
+       
+        <IconContext.Provider value={{size:'12px'}}>
         <button
           className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(2)}
         >
-         PICKUPS
+        <FaLongArrowAltRight/> <h6>PICKUP</h6>
         </button>
+        </IconContext.Provider>
+        <IconContext.Provider value={{size:'12px'}}>
         <button
-          className={toggleState === 3? "tabs active-tabs" : "tabs"}
+          className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(3)}
         >
-     RETURNED
+        <FaLongArrowAltLeft/> <h6>RETURNED</h6>
+     
         </button>
+        </IconContext.Provider>
       </div>
 
       <div className="content-tabs">

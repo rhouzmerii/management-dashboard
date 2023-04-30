@@ -24,6 +24,10 @@
   position: relative;
   outline: none;
   font-weight: 700;
+  display: flex;
+
+ align-items: center;
+  gap: 5px;
   
 }
 

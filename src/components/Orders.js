@@ -30,11 +30,13 @@ function Orders() {
         <div className="flex  mt-5 px-6 w-[100%] justify-between">
           <div className="">
             <div className="sm:w-[350px]  w-[320px] sm:h-[35px]  rounded-[5px] border-[2px] border-red-[#f7f7f7] flex  gap-2 justify-center items-center flex-row px-1 ">
-              <FiSearch />
+              <IconContext.Provider value={{ size: "20px",color: "#62AB4D" }}>
+                <FiSearch />
+              </IconContext.Provider>
               <input
                 type="text"
                 className="w-[100%] h-[100%] bg-transparent outline-none text-[#f7f7f7] rounded-l-[10px] pl-3 placeholder:text-[14px]"
-                placeholder="Search by any order parameter"
+                placeholder="Search by any order parameter....."
               />
             </div>
           </div>
@@ -99,7 +101,6 @@ function Orders() {
             <hr className="mb-5" />
           </div>
           <div>
-        
             <Tabs />
           </div>
         </div>
