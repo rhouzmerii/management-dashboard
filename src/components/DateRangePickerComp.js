@@ -26,7 +26,7 @@ const DateRangePickerComp = () => {
 
   useEffect(() => {
     // event listeners
-    document.addEventListener("keydown", hideOnEscape, true)
+    document.addEventListener("click", hideOnEscape, true)
     document.addEventListener("click", hideOnClickOutside, true)
   }, [])
 
@@ -48,10 +48,10 @@ const DateRangePickerComp = () => {
   }
 
   return (
-    <div className="calendarWrap">
+    <div className="calendarWrap ">
 
       <input
-        value={`${format(range[0].startDate, "MM/dd/yyyy")} to ${format(range[0].endDate, "MM/dd/yyyy")}`}
+        value={`Date Range`}
         readOnly
         className="inputBox"
         onClick={ () => setOpen(open => !open) }
@@ -66,7 +66,7 @@ const DateRangePickerComp = () => {
             ranges={range}
             months={2}
             direction="horizontal"
-            className="calendarElement"
+            className="calendarElement flex sm:flex-row flex-col"
           />
         }
       </div>
