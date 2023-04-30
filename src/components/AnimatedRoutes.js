@@ -10,7 +10,7 @@ import Products from "./Products";
 function AnimatedRoutes() {
   const location = useLocation();
   return (
-    <div>
+    <div className="w-[100%]">
       <AnimatePresence>
         <Routes location={location} key={location.pathname}>
           <Route path="/" exact element={<Orders />} />

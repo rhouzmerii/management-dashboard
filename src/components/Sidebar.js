@@ -11,16 +11,17 @@ import { Link } from "react-router-dom";
       const menus = [
         { name: "orders", link: "/", icon: MdOutlineDashboard },
         { name: "products", link: "/products", icon: AiOutlineUser },
-        { name: "messages", link: "/", icon: FiMessageSquare },
-        { name: "analytics", link: "/", icon: TbReportAnalytics, margin: true },
-        { name: "File Manager", link: "/", icon: FiFolder },
-        { name: "Cart", link: "/", icon: FiShoppingCart },
-        { name: "Saved", link: "/", icon: AiOutlineHeart, margin: true },
+        { name: "Curier/Deliveries", link: "/curier-deliveries", icon: FiMessageSquare },
+        { name: "Update Users", link: "/update-users", icon: TbReportAnalytics, margin: true },
+        { name: "Edit Farm", link: "edit-farm", icon: FiFolder },
+        { name: "Revenue", link: "/revenue", icon: FiShoppingCart },
+        { name: "Notification", link: "/notification", icon: AiOutlineHeart, margin: true },
+        { name: "Rating", link: "/rating", icon: AiOutlineHeart},
         { name: "Setting", link: "/", icon: RiSettings4Line },
       ];
       const [open, setOpen] = useState(true);
       return (
-        <section className="flex gap-6">
+        <section className="">
         <div
           className={`bg-[#62AB4D] min-h-screen ${
             open ? "w-60" : "w-16"
@@ -29,7 +30,7 @@ import { Link } from "react-router-dom";
           <div className="py-3 flex justify-end">
             <HiMenuAlt3
               size={26}
-              className="cursor-pointer"
+              className="cursor-pointer mb-3"
               onClick={() => setOpen(!open)}
             />
           </div>
