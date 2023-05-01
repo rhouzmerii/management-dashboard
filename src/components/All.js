@@ -13,7 +13,7 @@ function All() {
         </h6>
 
         <div className="w-[100%]">
-          <table style={{ width: "100%", }}>
+          <table style={{ width: "100%" }}>
             <tr className=" pl-3 bg-[#f7f7f7]">
               <td className=" py-3 px-6">
                 <div>
@@ -31,7 +31,9 @@ function All() {
               </td>
               <td>
                 <div className="flex gap-2 items-center">
-                  <h6 className="text-[12px] lg:text-[14px]">PAYMENT <br/> METHOD</h6>
+                  <h6 className="text-[12px] lg:text-[14px]">
+                    PAYMENT <br /> METHOD
+                  </h6>
                   <div>
                     <AiFillCaretUp />
                     <AiFillCaretDown />
@@ -77,8 +79,7 @@ function All() {
                 </div>
               </td>
             </tr>
-       
-               
+
             <tr className="pl-6 border-[1px] border-b-[#f7f7f7]">
               <td className=" px-6 py-4">
                 <div className="flex gap-2 items-center">
