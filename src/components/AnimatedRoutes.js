@@ -13,6 +13,7 @@ import Ratings from "./Ratings";
 import EditFarm from "./EditFarm";
 import Revenue from "./Revenue";
 import Notification from "./Notification";
+import UpdateUserDetails from "./UpdateUserDetails";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -29,6 +30,7 @@ function AnimatedRoutes() {
           <Route path="/edit-farm" element={<EditFarm />} />
           <Route path="/revenue" element={<Revenue />} />
           <Route path="/notification" element={<Notification />} />
+          <Route path="/update-user-details" element={<UpdateUserDetails />} />
         </Routes>
       </AnimatePresence>
     </div>

@@ -28,88 +28,85 @@ function UpdateUsersNew() {
   };
   return (
     <div>
-    <motion.div className="overflow-x-hidden">
-      <IconContext.Provider value={{ color: "#62AB4D", size: "25px" }}>
-        <header className="h-[55px] sm:h-[70px] w-[100%]  sm:w-[100%] bg-[#f7f7f7] flex justify-center items-center px-2 sm:px-3 md:px-6">
-          <h4 className="font-bold text-[#62AB4D] text-md sm:text-lg">
-         UPDATE USER <br/> - Create New
-          </h4>
-        </header>
+      <motion.div className="overflow-x-hidden">
+        <IconContext.Provider value={{ color: "#62AB4D", size: "25px" }}>
+          <header className="h-[55px] sm:h-[70px] w-[100%]  sm:w-[100%] bg-[#f7f7f7] flex justify-center items-center px-2 sm:px-3 md:px-6">
+            <h4 className="font-bold text-[#62AB4D] text-md sm:text-lg">
+              UPDATE USER <br /> - Create New
+            </h4>
+          </header>
 
-        <div className="w-[100%]">
-          <hr className="mb-5 mt-5 px-3 sm:px-6" />
-          <div className="">
-            <div className="px-6 flex justify-between sm:flex-row flex-col sm:items-center mt-8 ">
-              <div className="flex flex-col gap-3">
-                <div className="flex sm:items-center justify-between w-[100%] sm:flex-row flex-col md:w-[400px] lg:w-[550px]">
-                  <h6 className="text-[14px]">Farm Name</h6>
-                  <div className="md:w-[250px] lg:w-[400px] border-[2px] h-[30px] flex justify-center items-center border-red-[#f7f7f7] rounded-[5px] px-1">
-                    <input
-                      className="w-[100%] h-[100%] outline-none rounded-[10p]"
-                      type="text"
-                    />
+          <div className="w-[100%]">
+            <hr className="mb-5 mt-5 px-3 sm:px-6" />
+            <div className="">
+              <div className="px-6 flex justify-between sm:flex-row flex-col sm:items-center mt-8 ">
+                <div className="flex flex-col gap-3">
+                  <div className="flex sm:items-center justify-between w-[100%] sm:flex-row flex-col md:w-[400px] lg:w-[550px]">
+                    <h6 className="text-[14px]">Message Title</h6>
+                    <div className="md:w-[250px] lg:w-[400px] border-[2px] h-[30px] flex justify-center items-center border-red-[#f7f7f7] rounded-[5px] px-1">
+                      <input
+                        className="w-[100%] h-[100%] outline-none rounded-[10p]"
+                        type="text"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="flex sm:items-center justify-between w-[100%] sm:flex-row flex-col md:w-[400px] lg:w-[550px]">
-                  <h6 className="text-[14px]">Farm Address</h6>
-                  <div className="md:w-[250px] lg:w-[400px] border-[2px] h-[30px] flex justify-center items-center border-red-[#f7f7f7] rounded-[5px] px-1">
-                    <input
-                      className="w-[100%] h-[100%] outline-none rounded-[10p]"
-                      type="text"
-                    />
-                  </div>
-                </div>
-                <div className="flex sm:items-center justify-between w-[100%] sm:flex-row flex-col md:w-[400px] lg:w-[550px]">
-                  <h6 className="text-[14px]">City/Village
+                  <div className="flex sm:items-center justify-between w-[100%] sm:flex-row flex-col md:w-[400px] lg:w-[550px]">
+                    <h6 className="text-[14px]">Status
 </h6>
-                  <div className="md:w-[250px] lg:w-[400px] border-[2px] h-[30px] flex justify-center items-center border-red-[#f7f7f7] rounded-[5px] px-1">
-                    <input
-                      className="w-[100%] h-[100%] outline-none rounded-[10p]"
-                      type="text"
-                    />
+                    <div className="md:w-[250px] lg:w-[400px] border-[2px] h-[30px] flex justify-center items-center border-red-[#f7f7f7] rounded-[5px] px-1">
+                      <input
+                        className="w-[100%] h-[100%] outline-none rounded-[10p]"
+                        type="text"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="flex sm:items-center justify-between w-[100%] sm:flex-row flex-col md:w-[400px] lg:w-[550px]">
-                  <h6 className="text-[14px]">Best selling item</h6>
-                  <div className="md:w-[250px] lg:w-[400px] border-[2px] h-[30px] flex justify-center items-center border-red-[#f7f7f7] rounded-[5px] px-1">
-                    <input
-                      className="w-[100%] h-[100%] outline-none rounded-[10p]"
-                      type="text"
-                    />
+                  <div className="flex sm:items-center justify-between w-[100%] sm:flex-row flex-col md:w-[400px] lg:w-[550px]">
+                    <h6 className="text-[14px]">Show on</h6>
+                    <div className="md:w-[250px] lg:w-[400px] border-[2px] h-[30px] flex justify-center items-center border-red-[#f7f7f7] rounded-[5px] px-1">
+                      <input
+                        className="w-[100%] h-[100%] outline-none rounded-[10p]"
+                        type="text"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="flex sm:items-center justify-between w-[100%] sm:flex-row flex-col md:w-[400px] lg:w-[550px]">
-                  <h6 className="text-[14px] sm:text-center">
-                    Region with most
-                    <br className="hidden sm:flex" />
-                    Clients
-                  </h6>
-                  <div className="md:w-[250px] lg:w-[400px] border-[2px] h-[30px] flex justify-center items-center border-red-[#f7f7f7] rounded-[5px] px-1">
-                    <input
-                      className="w-[100%] h-[100%] outline-none rounded-[10px]"
-                      type="text"
-                    />
+                  <div className="flex sm:items-center justify-between w-[100%] sm:flex-row flex-col md:w-[400px] lg:w-[550px]">
+                    <h6 className="text-[14px]">Autodisable</h6>
+                    <div className="md:w-[250px] lg:w-[400px] border-[2px] h-[30px] flex justify-center items-center border-red-[#f7f7f7] rounded-[5px] px-1">
+                      <input
+                        className="w-[100%] h-[100%] outline-none rounded-[10p]"
+                        type="text"
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className="flex  justify-between  sm:flex-row flex-col md:w-[400px] lg:w-[550px]">
-                  <h6 className="text-[14px]">Description</h6>
+                  <div className="flex sm:items-center justify-between w-[100%] sm:flex-row flex-col md:w-[400px] lg:w-[550px]">
+                    <h6 className="text-[14px] sm:text-center">
+                    Date of Creation
 
-                  <textarea
-                    className="border-[2px] border-red-[#f7f7f7] outline-none md:w-[250px] lg:w-[400px] h-[300px] rounded-[10px]"
-                   
-                  />
+                    </h6>
+                    <div className="md:w-[250px] lg:w-[400px] border-[2px] h-[30px] flex justify-center items-center border-red-[#f7f7f7] rounded-[5px] px-1">
+                      <input
+                        className="w-[100%] h-[100%] outline-none rounded-[10px]"
+                        type="text"
+                      />
+                    </div>
+                  </div>
+                  <div className="flex  justify-between  sm:flex-row flex-col md:w-[400px] lg:w-[550px]">
+                    <h6 className="text-[14px]">Description</h6>
+
+                    <textarea className="border-[2px] border-red-[#f7f7f7] outline-none md:w-[250px] lg:w-[400px] h-[300px] rounded-[10px]" />
+                  </div>
                 </div>
-              </div>
-              <div className="flex flex-col ">
-                <h5 className="text-center text-[14px] sm:mb-3 sm:mt-0 my-3">
-              Preview
-                </h5>
-                <div className="w-[100%] sm:w-[300px] md:w-[350px] lg:w-[500px] h-[400px] bg-[#333333] "></div>
+                <div className="flex flex-col ">
+                  <h5 className="text-center text-[14px] sm:mb-3 sm:mt-0 my-3">
+                  Preview (Show on <br/>
+Home)
+
+                  </h5>
+                  <div className="w-[100%] sm:w-[300px] md:w-[350px] lg:w-[500px] h-[400px] bg-[#333333] "></div>
+                </div>
               </div>
             </div>
-            
-          </div>
-          <div className="flex justify-end w-[100%] items-end px-6">
+            <div className="flex justify-end w-[100%] items-end px-6">
               <button
                 onClick={handleOpen}
                 className=" mt-3 w-[100px] rounded-[7px] h-[30px] flex justify-center items-center bg-green-500"
@@ -143,7 +140,10 @@ function UpdateUsersNew() {
                       Your user update has been sent to the administration to
                       confirm.
                     </h6>
-                    <button onClick={handleClose} className="w-[100px] text-white rounded-[7px] h-[30px] text-[14px] flex justify-center items-center bg-blue-500">
+                    <button
+                      onClick={handleClose}
+                      className="w-[100px] text-white rounded-[7px] h-[30px] text-[14px] flex justify-center items-center bg-blue-500"
+                    >
                       Okay
                     </button>
                   </div>
@@ -151,8 +151,8 @@ function UpdateUsersNew() {
               </Box>
             </Fade>
           </Modal>
-      </IconContext.Provider>
-    </motion.div>
+        </IconContext.Provider>
+      </motion.div>
     </div>
   );
 }
