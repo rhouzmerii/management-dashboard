@@ -9,11 +9,11 @@ import { AiFillCaretUp, AiFillCaretDown } from "react-icons/ai";
 
 function Ratings() {
   return (
-    <div> <motion.div className="overflow-x-hidden">
+    <div>     <motion.div className="overflow-x-hidden">
     <IconContext.Provider value={{ color: "#62AB4D", size: "25px" }}>
       <header className="h-[55px] sm:h-[70px] w-[100%]  sm:w-[100%] bg-[#f7f7f7] flex justify-center items-center px-2 sm:px-3 md:px-12">
         <h4 className="font-bold text-[#62AB4D] text-md sm:text-lg">
-         RATINGS
+          UPDATE USERS
         </h4>
       </header>
 
@@ -73,9 +73,8 @@ function Ratings() {
                   <td className=" py-3 px-6">
                     <div>
                       <div className="flex gap-2 items-center">
-                        <input type="checkbox" />
                         <h6 className=" text-[12px] sm:text-[12px] lg:text-[14px]">
-                          REF
+                          MESSAGE TITLE
                         </h6>
                         <div>
                           <AiFillCaretUp />
@@ -84,10 +83,20 @@ function Ratings() {
                       </div>
                     </div>
                   </td>
+
+                  <td>
+                    <div className="flex gap-2 items-center">
+                      <h6 className="text-[12px] lg:text-[14px]">RATING</h6>
+                      <div>
+                        <AiFillCaretUp />
+                        <AiFillCaretDown />
+                      </div>
+                    </div>
+                  </td>
                   <td>
                     <div className="flex gap-2 items-center">
                       <h6 className="text-[12px] lg:text-[14px]">
-                        PAYMENT  METHOD
+                   USER
                       </h6>
                       <div>
                         <AiFillCaretUp />
@@ -97,17 +106,9 @@ function Ratings() {
                   </td>
                   <td>
                     <div className="flex gap-2 items-center">
-                      <h6 className="text-[12px] lg:text-[14px]">PRICE</h6>
-                      <div>
-                        <AiFillCaretUp />
-                        <AiFillCaretDown />
-                      </div>
-                    </div>
-                  </td>
-
-                  <td>
-                    <div className="flex gap-2 items-center">
-                      <h6 className="text-[12px] lg:text-[14px]">STATUS</h6>
+                      <h6 className="text-[12px] lg:text-[14px]">
+                       CONCERNING <br/> PRODUCTS
+                      </h6>
                       <div>
                         <AiFillCaretUp />
                         <AiFillCaretDown />
@@ -118,6 +119,7 @@ function Ratings() {
                   <td>
                     <div className="flex gap-2 items-center">
                       <h6 className="text-[12px] lg:text-[14px]">
+                        {" "}
                         DATE & TIME
                       </h6>
                       <div>
@@ -126,9 +128,12 @@ function Ratings() {
                       </div>
                     </div>
                   </td>
+
                   <td>
                     <div className="flex gap-2 items-center">
-                      <h6 className="text-[12px] lg:text-[14px]">DETAILS</h6>
+                      <h6 className="text-[12px] lg:text-[14px]">
+                        DETAILS
+                      </h6>
                       <div>
                         <AiFillCaretUp />
                         <AiFillCaretDown />
@@ -139,21 +144,23 @@ function Ratings() {
               </IconContext.Provider>
             </thead>
             <tbody>
-              <tr className="">
-                <td data-label="Ref" className=" px-4 sm:pl-6">
-                  <h6 className="text-[14px]">QH29</h6>
+            <tr className="">
+                <td data-label="MEssage title" className=" px-4 sm:pl-6">
+                  <h6 className="text-[14px]">Very Good</h6>
                 </td>
-                <td data-label=" PAYMENT  METHOD" className="px-3 ">
+                <td data-label="rating" className="px-3">
                   {" "}
-                  <h6 className="text-[14px]">Visa</h6>
+                  <h6 className="text-[14px] ">5 Star</h6>
                 </td>
-                <td data-label="Price" className=" px-3">
-                  <h6 className="text-[14px]">123.00</h6>
-                </td>
-                <td data-label="STATUS" className="px-3">
+                <td data-label=" user" className="px-3 ">
                   {" "}
-                  <h6 className="text-[14px] ">Delivered</h6>
+                  <h6 className="text-[14px]">Username</h6>
                 </td>
+                <td data-label="Autodisable">
+                  <h6 className="text-[14px]">Multiple</h6>
+                 
+                </td>
+
                 <td data-label="DATE & TIME" className="px-3">
                   {" "}
                   <h6 className="text-[14px]">
@@ -162,25 +169,26 @@ function Ratings() {
                   </h6>
                 </td>
                 <td data-label="DETAILS" className=" px-3">
-              
-                 Edit
+                  X
                 </td>
               </tr>
               <tr className="">
-                <td data-label="Ref" className=" px-4 sm:pl-6">
-                  <h6 className="text-[14px]">QH29</h6>
+                <td data-label="MEssage title" className=" px-4 sm:pl-6">
+                  <h6 className="text-[14px]">Very Good</h6>
                 </td>
-                <td data-label=" PAYMENT  METHOD" className="px-3 ">
+                <td data-label="rating" className="px-3">
                   {" "}
-                  <h6 className="text-[14px]">Visa</h6>
+                  <h6 className="text-[14px] ">5 Star</h6>
                 </td>
-                <td data-label="Price" className=" px-3">
-                  <h6 className="text-[14px]">123.00</h6>
-                </td>
-                <td data-label="STATUS" className="px-3">
+                <td data-label=" user" className="px-3 ">
                   {" "}
-                  <h6 className="text-[14px] ">Delivered</h6>
+                  <h6 className="text-[14px]">Username</h6>
                 </td>
+                <td data-label="Autodisable">
+                  <h6 className="text-[14px]">Multiple</h6>
+                 
+                </td>
+
                 <td data-label="DATE & TIME" className="px-3">
                   {" "}
                   <h6 className="text-[14px]">
@@ -189,25 +197,26 @@ function Ratings() {
                   </h6>
                 </td>
                 <td data-label="DETAILS" className=" px-3">
-              
-                 Edit
+                  X
                 </td>
               </tr>
               <tr className="">
-                <td data-label="Ref" className=" px-4 sm:pl-6">
-                  <h6 className="text-[14px]">QH29</h6>
+                <td data-label="MEssage title" className=" px-4 sm:pl-6">
+                  <h6 className="text-[14px]">Very Good</h6>
                 </td>
-                <td data-label=" PAYMENT  METHOD" className="px-3 ">
+                <td data-label="rating" className="px-3">
                   {" "}
-                  <h6 className="text-[14px]">Visa</h6>
+                  <h6 className="text-[14px] ">5 Star</h6>
                 </td>
-                <td data-label="Price" className=" px-3">
-                  <h6 className="text-[14px]">123.00</h6>
-                </td>
-                <td data-label="STATUS" className="px-3">
+                <td data-label=" user" className="px-3 ">
                   {" "}
-                  <h6 className="text-[14px] ">Delivered</h6>
+                  <h6 className="text-[14px]">Username</h6>
                 </td>
+                <td data-label="Autodisable">
+                  <h6 className="text-[14px]">Multiple</h6>
+                 
+                </td>
+
                 <td data-label="DATE & TIME" className="px-3">
                   {" "}
                   <h6 className="text-[14px]">
@@ -216,25 +225,26 @@ function Ratings() {
                   </h6>
                 </td>
                 <td data-label="DETAILS" className=" px-3">
-              
-                 Edit
+                  X
                 </td>
               </tr>
               <tr className="">
-                <td data-label="Ref" className=" px-4 sm:pl-6">
-                  <h6 className="text-[14px]">QH29</h6>
+                <td data-label="MEssage title" className=" px-4 sm:pl-6">
+                  <h6 className="text-[14px]">Very Good</h6>
                 </td>
-                <td data-label=" PAYMENT  METHOD" className="px-3 ">
+                <td data-label="rating" className="px-3">
                   {" "}
-                  <h6 className="text-[14px]">Visa</h6>
+                  <h6 className="text-[14px] ">5 Star</h6>
                 </td>
-                <td data-label="Price" className=" px-3">
-                  <h6 className="text-[14px]">123.00</h6>
-                </td>
-                <td data-label="STATUS" className="px-3">
+                <td data-label=" user" className="px-3 ">
                   {" "}
-                  <h6 className="text-[14px] ">Delivered</h6>
+                  <h6 className="text-[14px]">Username</h6>
                 </td>
+                <td data-label="Autodisable">
+                  <h6 className="text-[14px]">Multiple</h6>
+                 
+                </td>
+
                 <td data-label="DATE & TIME" className="px-3">
                   {" "}
                   <h6 className="text-[14px]">
@@ -243,25 +253,26 @@ function Ratings() {
                   </h6>
                 </td>
                 <td data-label="DETAILS" className=" px-3">
-              
-                 Edit
+                  X
                 </td>
               </tr>
               <tr className="">
-                <td data-label="Ref" className=" px-4 sm:pl-6">
-                  <h6 className="text-[14px]">QH29</h6>
+                <td data-label="MEssage title" className=" px-4 sm:pl-6">
+                  <h6 className="text-[14px]">Very Good</h6>
                 </td>
-                <td data-label=" PAYMENT  METHOD" className="px-3 ">
+                <td data-label="rating" className="px-3">
                   {" "}
-                  <h6 className="text-[14px]">Visa</h6>
+                  <h6 className="text-[14px] ">5 Star</h6>
                 </td>
-                <td data-label="Price" className=" px-3">
-                  <h6 className="text-[14px]">123.00</h6>
-                </td>
-                <td data-label="STATUS" className="px-3">
+                <td data-label=" user" className="px-3 ">
                   {" "}
-                  <h6 className="text-[14px] ">Delivered</h6>
+                  <h6 className="text-[14px]">Username</h6>
                 </td>
+                <td data-label="Autodisable">
+                  <h6 className="text-[14px]">Multiple</h6>
+                 
+                </td>
+
                 <td data-label="DATE & TIME" className="px-3">
                   {" "}
                   <h6 className="text-[14px]">
@@ -270,25 +281,26 @@ function Ratings() {
                   </h6>
                 </td>
                 <td data-label="DETAILS" className=" px-3">
-              
-                 Edit
+                  X
                 </td>
               </tr>
               <tr className="">
-                <td data-label="Ref" className=" px-4 sm:pl-6">
-                  <h6 className="text-[14px]">QH29</h6>
+                <td data-label="MEssage title" className=" px-4 sm:pl-6">
+                  <h6 className="text-[14px]">Very Good</h6>
                 </td>
-                <td data-label=" PAYMENT  METHOD" className="px-3 ">
+                <td data-label="rating" className="px-3">
                   {" "}
-                  <h6 className="text-[14px]">Visa</h6>
+                  <h6 className="text-[14px] ">5 Star</h6>
                 </td>
-                <td data-label="Price" className=" px-3">
-                  <h6 className="text-[14px]">123.00</h6>
-                </td>
-                <td data-label="STATUS" className="px-3">
+                <td data-label=" user" className="px-3 ">
                   {" "}
-                  <h6 className="text-[14px] ">Delivered</h6>
+                  <h6 className="text-[14px]">Username</h6>
                 </td>
+                <td data-label="Autodisable">
+                  <h6 className="text-[14px]">Multiple</h6>
+                 
+                </td>
+
                 <td data-label="DATE & TIME" className="px-3">
                   {" "}
                   <h6 className="text-[14px]">
@@ -297,38 +309,12 @@ function Ratings() {
                   </h6>
                 </td>
                 <td data-label="DETAILS" className=" px-3">
-              
-                 Edit
+                  X
                 </td>
               </tr>
-              <tr className="">
-                <td data-label="Ref" className=" px-4 sm:pl-6">
-                  <h6 className="text-[14px]">QH29</h6>
-                </td>
-                <td data-label=" PAYMENT  METHOD" className="px-3 ">
-                  {" "}
-                  <h6 className="text-[14px]">Visa</h6>
-                </td>
-                <td data-label="Price" className=" px-3">
-                  <h6 className="text-[14px]">123.00</h6>
-                </td>
-                <td data-label="STATUS" className="px-3">
-                  {" "}
-                  <h6 className="text-[14px] ">Delivered</h6>
-                </td>
-                <td data-label="DATE & TIME" className="px-3">
-                  {" "}
-                  <h6 className="text-[14px]">
-                    DD.MM.YYYY <br />
-                    HH:MM
-                  </h6>
-                </td>
-                <td data-label="DETAILS" className=" px-3">
-              
-                 Edit
-                </td>
-              </tr>
-           
+             
+             
+            
             </tbody>
           </table>
         </div>
