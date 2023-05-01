@@ -5,26 +5,26 @@ import { IconContext } from "react-icons";
 import { BsTag } from "react-icons/bs";
 import { RxCaretDown } from "react-icons/rx";
 import { VscBellDot } from "react-icons/vsc";
+import { AiFillCaretUp, AiFillCaretDown } from "react-icons/ai";
+
 function UpdateUsers() {
   return (
     <div>
       {" "}
       <motion.div className="overflow-x-hidden">
         <IconContext.Provider value={{ color: "#62AB4D", size: "25px" }}>
-          <header className="h-[55px] sm:h-[70px] w-[100%]  sm:w-[100%] bg-[#f7f7f7] flex justify-center items-center px-2 sm:px-3 md:px-6">
+          <header className="h-[55px] sm:h-[70px] w-[100%]  sm:w-[100%] bg-[#f7f7f7] flex justify-center items-center px-2 sm:px-3 md:px-12">
             <h4 className="font-bold text-[#62AB4D] text-md sm:text-lg">
-              Update Users
+              UPDATE USERS
             </h4>
-
-            
           </header>
 
           <div>
-            <hr className="mb-5 mt-5 px-3 sm:px-6" />
-            <div className="px-3 sm:px-6 my-5 flex gap-4">
-              <div className="w-[160px] border-[2px] h-[30px] flex justify-center items-center border-red-[#f7f7f7] rounded-[5px] px-1">
-                <button className="flex items-center justify-between w-[160px] ">
-                  <div className="flex items-center gap-3">
+            <hr className="mb-5 mt-5 px-3 sm:mx-6" />
+            <div className="px-3 sm:'px-4 md:px-6 my-5 flex sm:flex-row flex-col  lg:gap-4 sm:gap-2 w-[100%]">
+              <div className="w-[100%] ss:w-[120px] lg:w-[160px] border-[2px] h-[35px] sm:mb-0 mb-2 flex justify-center items-center border-red-[#f7f7f7] rounded-[5px] px-1">
+                <button className="flex items-center justify-between ss:w-[160px] w-[100%] ">
+                  <div className="flex items-center ss:gap-3">
                     <IconContext.Provider value={{ size: "15px" }}>
                       {" "}
                       <BsTag />
@@ -40,576 +40,310 @@ function UpdateUsers() {
                   </div>
                 </button>
               </div>
-              <div className="flex items-center gap-3">
-                <h6 className="text-[14px]"> Search:</h6>
-                <div className="w-[230px] border-[2px] h-[30px] flex justify-center items-center border-red-[#f7f7f7] rounded-[5px] px-1">
+              <div className="flex sm:flex-row flex-col sm:items-center sm:gap-2 lg:gap-3">
+                <h6 className="text-[12px] lg:text-[14px]"> Search:</h6>
+                <div className="w-[100%] ss:w-[120px] md:w-[140px] sm:mb-0 mb-2  lg:w-[200px] border-[2px] h-[35px] flex justify-center items-center border-red-[#f7f7f7] rounded-[5px] px-1">
                   <input
                     className="w-[100%] h-[100%] outline-none rounded-[10p]"
                     type="text"
                   />
                 </div>
-                <h6 className="text-[14px]"> from</h6>
-                <div className="w-[200px] border-[2px] h-[30px] flex justify-center items-center border-red-[#f7f7f7] rounded-[5px] px-1">
+                <h6 className="text-[12px] lg:text-[14px]"> from</h6>
+                <div className="w-[100%] ss:w-[120px] md:w-[140px] lg:w-[200px] sm:mb-0 mb-2  border-[2px] h-[35px] flex justify-center items-center border-red-[#f7f7f7] rounded-[5px] px-1">
                   <input
                     className="w-[100%] h-[100%] outline-none rounded-[10p]"
                     type="text"
                   />
                 </div>
-                <h6 className="text-[14px]"> to</h6>
-                <div className="w-[200px] border-[2px] h-[30px] flex justify-center items-center border-red-[#f7f7f7] rounded-[5px] px-1">
+                <h6 className="text-[12px] lg:text-[14px]"> to</h6>
+                <div className="w-[100%]  ss:w-[120px] md:w-[140px]lg:w-[200px] border-[2px] h-[35px] flex justify-center items-center border-red-[#f7f7f7] rounded-[5px] px-1">
                   <input
                     className="w-[100%] h-[100%] outline-none rounded-[10p]"
                     type="text"
                   />
                 </div>
-                <button className="w-[100px] rounded-[7px] h-[30px] flex justify-center items-center bg-green-500">
+                <button className="w-[100%] text-white ss:mt-0 mt-3 lg:w-[100px] ss:w-[80px] rounded-[7px] h-[35px] lg:text-[14px] text-[12px] flex justify-center items-center bg-green-500">
                   Save
                 </button>
               </div>
             </div>
             <div>
-              <div className="w-[100%] sm:overflow-x-hidden overflow-x-scroll">
-                <IconContext.Provider value={{ size: "10px" }}>
-                  <h6 className="lg:px-6 text-[12px] px-3">
-                    Showing 11-20 of 64 results
-                  </h6>
-
-                  <div className="w-[100%]">
-                    <table style={{ width: "100%" }}>
-                      <tr className="lg:pl-6 pl-3 bg-[#f7f7f7]">
-                        <td className="lg:pl-6 px-3">
-                          <div>
-                            <div className="flex gap-2 items-center">
-                              <input type="checkbox" />
-                              <h6 className=" text-[12px] sm:text-[12px] lg:text-[14px]">
-                                ITEMS
-                              </h6>
+              <table>
+                <thead>
+                  <IconContext.Provider value={{ size: "12px" }}>
+                    <tr className=" pl-3 bg-[#f7f7f7]">
+                      <td className=" py-3 px-6">
+                        <div>
+                          <div className="flex gap-2 items-center">
+                            <h6 className=" text-[12px] sm:text-[12px] lg:text-[14px]">
+                              MESSAGE TITLE
+                            </h6>
+                            <div>
+                              <AiFillCaretUp />
+                              <AiFillCaretDown />
                             </div>
                           </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              QUANTITY
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              AMOUNT <br />
-                              (0=infinite)
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              Auto <br />
-                              Renew
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              FILTER
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              PRICE
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              AVAILABLE
-                            </h6>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr className="pl-6 border-[1px] border-b-[#f7f7f7]">
-                        <td className="pl-6 py-4">
-                          <div className="flex gap-2 items-center">
-                            <input type="checkbox" />
-                            <h6 className="text-[12px] sm:text-[14px]">
-                              Carrots
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">KG</h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              20.20
-                            </h6>
-                          </div>
-                        </td>
+                        </div>
+                      </td>
 
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              Daily
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              Organic
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              12.34
-                            </h6>
-                          </div>
-                        </td>
-
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px] ">X</h6>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr className="lg:pl-6 pl-3 bg-[#f7f7f7]">
-                        <td className="lg:pl-6 px-3">
+                      <td>
+                        <div className="flex gap-2 items-center">
+                          <h6 className="text-[12px] lg:text-[14px]">STATUS</h6>
                           <div>
-                            <div className="flex gap-2 items-center">
-                              <input type="checkbox" />
-                              <h6 className=" text-[12px] sm:text-[12px] lg:text-[14px]">
-                                ITEMS
-                              </h6>
-                            </div>
+                            <AiFillCaretUp />
+                            <AiFillCaretDown />
                           </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              QUANTITY
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              AMOUNT <br />
-                              (0=infinite)
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              Auto <br />
-                              Renew
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              FILTER
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              PRICE
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              AVAILABLE
-                            </h6>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr className="pl-6 border-[1px] border-b-[#f7f7f7]">
-                        <td className="pl-6 py-4">
-                          <div className="flex gap-2 items-center">
-                            <input type="checkbox" />
-                            <h6 className="text-[12px] sm:text-[14px]">
-                              Carrots
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">KG</h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              20.20
-                            </h6>
-                          </div>
-                        </td>
-
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              Daily
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              Organic
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              12.34
-                            </h6>
-                          </div>
-                        </td>
-
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px] ">X</h6>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr className="lg:pl-6 pl-3 bg-[#f7f7f7]">
-                        <td className="lg:pl-6 px-3">
+                        </div>
+                      </td>
+                      <td>
+                        <div className="flex gap-2 items-center">
+                          <h6 className="text-[12px] lg:text-[14px]">
+                            SHOW ON
+                          </h6>
                           <div>
-                            <div className="flex gap-2 items-center">
-                              <input type="checkbox" />
-                              <h6 className=" text-[12px] sm:text-[12px] lg:text-[14px]">
-                                ITEMS
-                              </h6>
-                            </div>
+                            <AiFillCaretUp />
+                            <AiFillCaretDown />
                           </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              QUANTITY
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              AMOUNT <br />
-                              (0=infinite)
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              Auto <br />
-                              Renew
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              FILTER
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              PRICE
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              AVAILABLE
-                            </h6>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr className="pl-6 border-[1px] border-b-[#f7f7f7]">
-                        <td className="pl-6 py-4">
-                          <div className="flex gap-2 items-center">
-                            <input type="checkbox" />
-                            <h6 className="text-[12px] sm:text-[14px]">
-                              Carrots
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">KG</h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              20.20
-                            </h6>
-                          </div>
-                        </td>
-
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              Daily
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              Organic
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              12.34
-                            </h6>
-                          </div>
-                        </td>
-
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px] ">X</h6>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr className="lg:pl-6 pl-3 bg-[#f7f7f7]">
-                        <td className="lg:pl-6 px-3">
+                        </div>
+                      </td>
+                      <td>
+                        <div className="flex gap-2 items-center">
+                          <h6 className="text-[12px] lg:text-[14px]">
+                            AUTO DISABLE
+                          </h6>
                           <div>
-                            <div className="flex gap-2 items-center">
-                              <input type="checkbox" />
-                              <h6 className=" text-[12px] sm:text-[12px] lg:text-[14px]">
-                                ITEMS
-                              </h6>
-                            </div>
+                            <AiFillCaretUp />
+                            <AiFillCaretDown />
                           </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              QUANTITY
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              AMOUNT <br />
-                              (0=infinite)
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              Auto <br />
-                              Renew
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              FILTER
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              PRICE
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              AVAILABLE
-                            </h6>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr className="pl-6 border-[1px] border-b-[#f7f7f7]">
-                        <td className="pl-6 py-4">
-                          <div className="flex gap-2 items-center">
-                            <input type="checkbox" />
-                            <h6 className="text-[12px] sm:text-[14px]">
-                              Carrots
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">KG</h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              20.20
-                            </h6>
-                          </div>
-                        </td>
+                        </div>
+                      </td>
 
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              Daily
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              Organic
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              12.34
-                            </h6>
-                          </div>
-                        </td>
-
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px] ">X</h6>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr className="lg:pl-6 pl-3 bg-[#f7f7f7]">
-                        <td className="lg:pl-6 px-3">
+                      <td>
+                        <div className="flex gap-2 items-center">
+                          <h6 className="text-[12px] lg:text-[14px]">
+                            {" "}
+                            DATE & TIME
+                          </h6>
                           <div>
-                            <div className="flex gap-2 items-center">
-                              <input type="checkbox" />
-                              <h6 className=" text-[12px] sm:text-[12px] lg:text-[14px]">
-                                ITEMS
-                              </h6>
-                            </div>
+                            <AiFillCaretUp />
+                            <AiFillCaretDown />
                           </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              QUANTITY
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              AMOUNT <br />
-                              (0=infinite)
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              Auto <br />
-                              Renew
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              FILTER
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              PRICE
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              AVAILABLE
-                            </h6>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr className="pl-6 border-[1px] border-b-[#f7f7f7]">
-                        <td className="pl-6 py-4">
-                          <div className="flex gap-2 items-center">
-                            <input type="checkbox" />
-                            <h6 className="text-[12px] sm:text-[14px]">
-                              Carrots
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">KG</h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              20.20
-                            </h6>
-                          </div>
-                        </td>
+                        </div>
+                      </td>
 
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              Daily
-                            </h6>
+                      <td>
+                        <div className="flex gap-2 items-center">
+                          <h6 className="text-[12px] lg:text-[14px]">
+                            DETAILS
+                          </h6>
+                          <div>
+                            <AiFillCaretUp />
+                            <AiFillCaretDown />
                           </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              Organic
-                            </h6>
-                          </div>
-                        </td>
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px]">
-                              12.34
-                            </h6>
-                          </div>
-                        </td>
+                        </div>
+                      </td>
+                    </tr>
+                  </IconContext.Provider>
+                </thead>
+                <tbody>
+                  <tr className="">
+                    <td data-label="MEssage title" className=" px-4 sm:pl-6">
+                      <h6 className="text-[14px]">Not enough Salad </h6>
+                    </td>
+                    <td data-label="STATUS" className="px-3">
+                      {" "}
+                      <h6 className="text-[14px] ">Active</h6>
+                    </td>
+                    <td data-label=" SHOW ON" className="px-3 ">
+                      {" "}
+                      <h6 className="text-[14px]">Salad</h6>
+                    </td>
+                    <td data-label="Autodisable">
+                      <h6 className="text-[14px]">Never</h6>
+                     
+                    </td>
 
-                        <td>
-                          <div className="flex gap-2 items-center">
-                            <h6 className="text-[12px] lg:text-[14px] ">X</h6>
-                          </div>
-                        </td>
-                      </tr>
-                    </table>
-                  </div>
-                </IconContext.Provider>
-              </div>
+                    <td data-label="DATE & TIME" className="px-3">
+                      {" "}
+                      <h6 className="text-[14px]">
+                        DD.MM.YYYY <br />
+                        HH:MM
+                      </h6>
+                    </td>
+                    <td data-label="DETAILS" className=" px-3">
+                      X
+                    </td>
+                  </tr>
+                  <tr className="">
+                    <td data-label="MEssage title" className=" px-4 sm:pl-6">
+                      <h6 className="text-[14px]">Not enough Salad </h6>
+                    </td>
+                    <td data-label="STATUS" className="px-3">
+                      {" "}
+                      <h6 className="text-[14px] ">Active</h6>
+                    </td>
+                    <td data-label=" SHOW ON" className="px-3 ">
+                      {" "}
+                      <h6 className="text-[14px]">Salad</h6>
+                    </td>
+                    <td data-label="Autodisable">
+                      <h6 className="text-[14px]">Never</h6>
+                     
+                    </td>
+
+                    <td data-label="DATE & TIME" className="px-3">
+                      {" "}
+                      <h6 className="text-[14px]">
+                        DD.MM.YYYY <br />
+                        HH:MM
+                      </h6>
+                    </td>
+                    <td data-label="DETAILS" className=" px-3">
+                      X
+                    </td>
+                  </tr>
+                  <tr className="">
+                    <td data-label="MEssage title" className=" px-4 sm:pl-6">
+                      <h6 className="text-[14px]">Not enough Salad </h6>
+                    </td>
+                    <td data-label="STATUS" className="px-3">
+                      {" "}
+                      <h6 className="text-[14px] ">Active</h6>
+                    </td>
+                    <td data-label=" SHOW ON" className="px-3 ">
+                      {" "}
+                      <h6 className="text-[14px]">Salad</h6>
+                    </td>
+                    <td data-label="Autodisable">
+                      <h6 className="text-[14px]">Never</h6>
+                     
+                    </td>
+
+                    <td data-label="DATE & TIME" className="px-3">
+                      {" "}
+                      <h6 className="text-[14px]">
+                        DD.MM.YYYY <br />
+                        HH:MM
+                      </h6>
+                    </td>
+                    <td data-label="DETAILS" className=" px-3">
+                      X
+                    </td>
+                  </tr>
+                  <tr className="">
+                    <td data-label="MEssage title" className=" px-4 sm:pl-6">
+                      <h6 className="text-[14px]">Not enough Salad </h6>
+                    </td>
+                    <td data-label="STATUS" className="px-3">
+                      {" "}
+                      <h6 className="text-[14px] ">Active</h6>
+                    </td>
+                    <td data-label=" SHOW ON" className="px-3 ">
+                      {" "}
+                      <h6 className="text-[14px]">Salad</h6>
+                    </td>
+                    <td data-label="Autodisable">
+                      <h6 className="text-[14px]">Never</h6>
+                     
+                    </td>
+
+                    <td data-label="DATE & TIME" className="px-3">
+                      {" "}
+                      <h6 className="text-[14px]">
+                        DD.MM.YYYY <br />
+                        HH:MM
+                      </h6>
+                    </td>
+                    <td data-label="DETAILS" className=" px-3">
+                      X
+                    </td>
+                  </tr>
+                  <tr className="">
+                    <td data-label="MEssage title" className=" px-4 sm:pl-6">
+                      <h6 className="text-[14px]">Not enough Salad </h6>
+                    </td>
+                    <td data-label="STATUS" className="px-3">
+                      {" "}
+                      <h6 className="text-[14px] ">Active</h6>
+                    </td>
+                    <td data-label=" SHOW ON" className="px-3 ">
+                      {" "}
+                      <h6 className="text-[14px]">Salad</h6>
+                    </td>
+                    <td data-label="Autodisable">
+                      <h6 className="text-[14px]">Never</h6>
+                     
+                    </td>
+
+                    <td data-label="DATE & TIME" className="px-3">
+                      {" "}
+                      <h6 className="text-[14px]">
+                        DD.MM.YYYY <br />
+                        HH:MM
+                      </h6>
+                    </td>
+                    <td data-label="DETAILS" className=" px-3">
+                      X
+                    </td>
+                  </tr>
+                  <tr className="">
+                    <td data-label="MEssage title" className=" px-4 sm:pl-6">
+                      <h6 className="text-[14px]">Not enough Salad </h6>
+                    </td>
+                    <td data-label="STATUS" className="px-3">
+                      {" "}
+                      <h6 className="text-[14px] ">Active</h6>
+                    </td>
+                    <td data-label=" SHOW ON" className="px-3 ">
+                      {" "}
+                      <h6 className="text-[14px]">Salad</h6>
+                    </td>
+                    <td data-label="Autodisable">
+                      <h6 className="text-[14px]">Never</h6>
+                     
+                    </td>
+
+                    <td data-label="DATE & TIME" className="px-3">
+                      {" "}
+                      <h6 className="text-[14px]">
+                        DD.MM.YYYY <br />
+                        HH:MM
+                      </h6>
+                    </td>
+                    <td data-label="DETAILS" className=" px-3">
+                      X
+                    </td>
+                  </tr>
+                  <tr className="">
+                    <td data-label="MEssage title" className=" px-4 sm:pl-6">
+                      <h6 className="text-[14px]">Not enough Salad </h6>
+                    </td>
+                    <td data-label="STATUS" className="px-3">
+                      {" "}
+                      <h6 className="text-[14px] ">Active</h6>
+                    </td>
+                    <td data-label=" SHOW ON" className="px-3 ">
+                      {" "}
+                      <h6 className="text-[14px]">Salad</h6>
+                    </td>
+                    <td data-label="Autodisable">
+                      <h6 className="text-[14px]">Never</h6>
+                     
+                    </td>
+
+                    <td data-label="DATE & TIME" className="px-3">
+                      {" "}
+                      <h6 className="text-[14px]">
+                        DD.MM.YYYY <br />
+                        HH:MM
+                      </h6>
+                    </td>
+                    <td data-label="DETAILS" className=" px-3">
+                      X
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </IconContext.Provider>
