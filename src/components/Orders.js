@@ -61,7 +61,7 @@ function Orders() {
                   type="text"
                 />
               </div>
-              <button className="w-[100%] ss:mt-0 mt-3 lg:w-[100px] ss:w-[80px] rounded-[7px] h-[35px] lg:text-[14px] sm:text-[12px] flex justify-center items-center bg-green-500">
+              <button className="w-[100%] text-white ss:mt-0 mt-3 lg:w-[100px] ss:w-[80px] rounded-[7px] h-[35px] lg:text-[14px] text-[12px] flex justify-center items-center bg-green-500">
                 Save
               </button>
             </div>
